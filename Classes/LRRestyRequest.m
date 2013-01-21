@@ -176,9 +176,8 @@
   if ([delegate respondsToSelector:@selector(restyRequest:didReceiveData:)]) {
     [delegate restyRequest:self didReceiveData:data];
   }
-  else {
-    [super connection:connection didReceiveData:data]; 
-  }
+
+  [super connection:connection didReceiveData:data];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
