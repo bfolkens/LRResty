@@ -113,8 +113,8 @@ void *NewBase64Decode(
 		outputBuffer[j + 1] = (accumulated[1] << 4) | (accumulated[2] >> 2);
 		outputBuffer[j + 2] = (accumulated[2] << 6) | accumulated[3];
 		j += accumulateIndex - 1;
-	}
 #endif
+	}
 	
 	if (outputLength)
 	{
